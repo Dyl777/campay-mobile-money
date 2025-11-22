@@ -1,32 +1,41 @@
 
 # **Campay Mobile Money Service (Go)**
 
+
 A lightweight Go service for initiating **Campay Mobile Money payments** (MTN/Orange Cameroon).
 This project demonstrates how to:
 
-* Send Mobile Money payment requests to Campay
-* Load configuration using `.env`
-* Validate numbers in the **Cameroon format (237XXXXXXXXX)**
-* Organize a clean Go module
+* Send Mobile Money payment requests to Campay with the API_KEY loaded using `.env`
 
 ---
 
 ##  **Getting Started**
 
-### **1. Initialize the Go module**
+### **1: Set up your Campay Account**
+Visit https://demo.campay.net/en/ and create an account. This should be very straight forward. Just make sure to verify your email address via the link they send to your address.
+
+### **2: Getting an access token (PAT or API_KEY)**
+- Click on the "Applications" tab on the left side of the dashboard.
+- Click "Register Application"
+- Give your application any name you'd like
+- You can leave the rest of the fields empty
+- Click on the application you just created
+- Scroll down and copy the "Permanent Access token" and use it as the **API_KEY** in this project
+
+### **3. Initialize the Go module**
 
 ```bash
 go mod init github.com/repo-user/campay-mobile-money
 ```
 
-### **2. Install dependencies**
+### **4. Install dependencies**
 
 ```bash
 go get github.com/joho/godotenv
 go mod tidy
 ```
 
-### **3. Run the project**
+### **5. Run the project**
 
 ```bash
 go run .
