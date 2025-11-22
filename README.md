@@ -1,6 +1,3 @@
-Here is a clean, professional **README.md** including your commands, instructions, and a Cameroon-specific validation note.
-
----
 
 # 📌 **Campay Mobile Money Service (Go)**
 
@@ -14,12 +11,12 @@ This project demonstrates how to:
 
 ---
 
-## 🚀 **Getting Started**
+##  **Getting Started**
 
 ### **1. Initialize the Go module**
 
 ```bash
-go mod init github.com/repouser/campay-mobile-money
+go mod init github.com/repo-user/campay-mobile-money
 ```
 
 ### **2. Install dependencies**
@@ -37,7 +34,7 @@ go run .
 
 ---
 
-## 📁 **Project Structure**
+## **Project Structure**
 
 ```
 campay-mobile-money/
@@ -52,21 +49,17 @@ campay-mobile-money/
 
 ---
 
-## 📦 **Environment Variables**
+## **Environment Variables**
 
 Create a `.env` file in the root directory:
 
 ```
 API_KEY=Token YOUR_CAMPAY_API_KEY
-AMOUNT=5
-FROM=237600000000
-DESCRIPTION=Test Transaction
-REFERENCE=1234567890
 ```
 
 ---
 
-## 📡 **Running Payments**
+## **Running Payments**
 
 The service constructs a `CollectRequest` and sends a POST request to:
 
@@ -81,13 +74,13 @@ It returns either:
 
 ---
 
-# ⚠️ **IMPORTANT NOTE — CAMEROON MTN/ORANGE FORMAT**
+#  **IMPORTANT NOTE — CAMEROON MTN/ORANGE FORMAT**
 
 The Campay API **only supports MTN and Orange Cameroon numbers**.
 
-✔ **Number must start with country code `237`**
-✔ No `+237`, no parentheses, no spaces
-✔ Format must be:
+- **Number must start with country code `237`**
+- No `+237`, no parentheses, no spaces
+- Format must be:
 
 ```
 2376XXXXXXXX
@@ -99,7 +92,7 @@ The code should  validates the phone number and if it does not have a 237 prefix
 ---
 
 
-## ❤️ **Contributing**
+## **Contributing**
 
 Pull requests are welcome.
 For major changes, please open an issue first to discuss what you would like to change.
