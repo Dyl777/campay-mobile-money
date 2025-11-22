@@ -1,5 +1,5 @@
 
-# 📌 **Campay Mobile Money Service (Go)**
+# **Campay Mobile Money Service (Go)**
 
 A lightweight Go service for initiating **Campay Mobile Money payments** (MTN/Orange Cameroon).
 This project demonstrates how to:
